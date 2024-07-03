@@ -1,0 +1,56 @@
+#LoginWrapper {
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #LoginWrapper #LoginBox {
+    margin-top: 40px;
+  }
+
+  #LoginWrapper #LoginBox #LoginLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm input {
+    font-size: 18px;
+    padding: 6px;
+    width: 250px;
+
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    border: solid 2px white;
+
+    background-color: red;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm #SubmitButton {
+    font-size: 18px;
+    padding: 6px;
+
+    margin-top: 10px;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm #SubmitButton input {
+    color: white;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm p {
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm #Register p {
+    color: rebeccapurple;
+  }
+
+  #LoginWrapper #LoginBox #LoginForm #Register a {
+    color: white;
+  }
