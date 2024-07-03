@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#MainWrapper {
+  height: 100%;
+  overflow: hidden;
+
+  background-color: aqua;
+}
+
+/* Main Wrapper Content */
+
+#MainWrapper #MainTopBar {
+  height: 80px;
+  background-color: rgb(50, 211, 45);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: solid purple 2px;
+}
+
+  #MainWrapper #MainTopBar #MainTopWebsiteName {
+    display: flex;
+    margin: 20px;
+  }
+
+    #MainWrapper #MainTopBar #MainTopWebsiteName img {
+      height: 40px;
+      padding-right: 20px;
+    }
+  
+  #MainWrapper #MainTopBar #MainTopAccountControl {
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    #MainWrapper #MainTopBar #MainTopAccountControl a {
+      height: 40px;
+    }
+      #MainWrapper #MainTopBar #MainTopAccountControl a img {
+        height: 40px;
+      }
+    
+    #MainWrapper #MainTopBar #MainTopAccountControl #MainTopAccountProfile {
+      height: 40px;
+      width: 40px;
+
+      margin-left: 20px;
+      border-radius: 100%;
+
+      background-color: bisque;
+
+      background-image: url("Resources/Logo.png");
+      background-position: center;
+    }
+
+/* ~~Main Wrapper Content~~ */
+
