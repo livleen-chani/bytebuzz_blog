@@ -6,6 +6,9 @@
   $dbPassword = getenv('MYSQL_PASSWORD');
   $dbName = getenv('MYSQL_DATABASE');
 
+  $devKey = getenv('SIGNUP_KEY');
+  echo $devKey;
+
   mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
   
   try {
