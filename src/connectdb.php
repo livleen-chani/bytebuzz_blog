@@ -5,7 +5,7 @@
   $dbUsername = getenv('MYSQL_USER');
   $dbPassword = getenv('MYSQL_PASSWORD');
   $dbName = getenv('MYSQL_DATABASE');
-  
+
   mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
   
   try {
