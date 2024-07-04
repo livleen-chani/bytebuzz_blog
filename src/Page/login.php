@@ -48,7 +48,7 @@
         <form action="" method="post">
           <ul id="LoginForm">
             <li><p>USERNAME</p></li>
-            <li><input type="text" maxlength="50" minlength="5" name="username" required></li>
+            <li><input type="text" maxlength="15" minlength="5" name="username" required></li>
             <li><p>PASSWORD</p></li>
             <li><input type="password" maxlength="255" minlength="8" name="password" required></li>
             <li><input type="submit" value="LogIn" id="SubmitButton"></li>

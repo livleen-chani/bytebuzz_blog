@@ -9,7 +9,10 @@
 
     $username = strtolower($username);
 
-    if(strlen($email)< 3 || strlen($username)< 5 || strlen($password)< 8) {
+    if(
+        (strlen($email)< 3 || strlen($email)> 255) && 
+        (strlen($username)< 5 || strlen($username)> 15) &&
+        (strlen($password)< 8 || strlen($password)> 255)) {
       header("Location: errorPage.php");
     } else {
       //Prepare the Insertion
@@ -51,7 +54,7 @@
             <li><p>EMAIL</p></li>
             <li><input type="email" maxlength="255" minlength="3" name="email" required></li>
             <li><p>USERNAME</p></li>
-            <li><input type="text" maxlength="50" minlength="5" name="username" required></li>
+            <li><input type="text" maxlength="15" minlength="5" name="username" required></li>
             <li><p>PASSWORD</p></li>
             <li><input type="password" maxlength="255" minlength="8" name="password" required></li>
             <li><input type="submit" value="Signup" id="SubmitButton"></li>
