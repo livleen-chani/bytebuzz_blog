@@ -3,12 +3,10 @@
   width: 100%;
 
   overflow-y: scroll;
+  scrollbar-width: none;
 
   background-color: aqua;
 }
-  #ContentContainer::-webkit-scrollbar {
-    display: none;
-  }
 
   #ProfileViewWrapper #ContentContainer {
     padding-left: max(20px, 10%);
@@ -18,18 +16,12 @@
 
     display: flex;
     justify-content: center;
-
-    /* IE and Edge */
-    -ms-overflow-style: none; 
-
-    /* Firefox */
-    scrollbar-width: none;  
   }
 
   #ProfileViewWrapper #Profile {
     height: 400px;
     min-width: 340px;
-    max-width: 340px;
+    max-width: 400px;
 
     margin: 40px;
     padding: 0px;
@@ -85,6 +77,7 @@
       
       line-height: 8px;
 
+      font-size: 14px;
     }
 
       #ProfileViewWrapper #Profile #ProfileHead #UserData #Username {
@@ -112,6 +105,23 @@
       /* transform: rotate(10deg); */
     }
 
+    #ProfileViewWrapper #Profile #ProfileMiddle #ProfileLogout {
+      width: 100px;
+      height: 50px;
+
+      border-radius: 10px;
+
+      background-color: rgb(238, 45, 45);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #ProfileViewWrapper #Profile #ProfileMiddle #ProfileLogout img {
+      height: 20px;
+    }
+
     #ProfileViewWrapper #Profile #ProfileMiddle #ProfileButton {
       height: 50px;
       width: 50px;
@@ -126,7 +136,7 @@
     }
 
     #ProfileViewWrapper #Profile #ProfileMiddle #ProfileButton img {
-      height: 20px;
+      height: 18px;
     }
 
   /* PROFILE END PART */
@@ -157,9 +167,11 @@
 
   /* BLOG POST */
   .UserPost {
+    cursor: pointer;
+
     height: 400px;
     min-width: 340px;
-    max-width: 340px;
+    max-width: 400px;
 
     margin: 40px;
     padding: 0px;
@@ -227,15 +239,18 @@
   .UserPost #Content #PostHeadline {
     margin: 20px;
     margin-top: 30px;
-    /* background-color: rgb(104, 104, 12); */
     
     font-size: 16px;
 
     margin-bottom: 0px;
   }
 
+  .UserPost #Content #PostHeadline #HeadlineData {
+    font-weight: 600;
+  }
+
   .UserPost #Content #ReadTime{
-    font-size: 12px;
+    font-size: 13px;
 
     position: relative;
     top: -10px;
@@ -250,7 +265,11 @@
 
   .UserPost #Content #CoverImage {
     height: 140px;
-    width: 300px;
+    min-width: 300px;
+    max-width: 360px;
+
+    margin-left: 20px;
+    margin-right: 20px;
 
     display: flex;
     justify-content: center;
@@ -273,14 +292,25 @@
     margin-right: 20px;
 
     height: 40px;
-    background-color: beige;
+    background-color: rgb(22, 182, 83);
     
     display: flex;
     align-items: center;
   }
 
-  .UserPost #Content #Tags .Class {
-    padding: 20px;
+  .UserPost #Content #Tags .TagData {
+    line-height: 0px;
+
+    margin-right: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    border: 1px solid rgb(225, 225, 225);
   }
 
 

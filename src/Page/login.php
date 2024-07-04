@@ -9,14 +9,14 @@
     $username = strtolower($username);
 
     //Prepare for Binding
-    $stmt = $conn->prepare("SELECT * FROM account WHERE username = ?");
+    $stmt = $conn->prepare("SELECT username, password FROM account WHERE username = ?");
     
     //Bind Parameters
     $stmt->bind_param("s", $username);
+    $stmt->bind_result($user, $pass);
 
     try {
       $stmt->execute();
-      $stmt->bind_result($id, $user, $pass, $mail, $profile);
     } catch (mysqli_sql_exception $e) {
       header("Location: errorPage.php");
       die("Connection failed: " . $e->getMessage());
@@ -27,9 +27,9 @@
         $_SESSION['username'] = $user;
         echo $_SESSION['username'];
         header("Location: profileView.php");
+        exit();
       }
     }
-
   }
 
   ob_end_flush();

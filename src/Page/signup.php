@@ -8,6 +8,7 @@
     $password = filter_var($_POST['password'], FILTER_SANITIZE_SPECIAL_CHARS);
 
     $username = strtolower($username);
+    $email = strtolower($email);
 
     if(
         (strlen($email)< 3 || strlen($email)> 255) && 
@@ -15,21 +16,12 @@
         (strlen($password)< 8 || strlen($password)> 255)) {
       header("Location: errorPage.php");
     } else {
-      //Prepare the Insertion
-      $stmt = $conn->prepare("INSERT INTO account (username, password, email) VALUES (?, ?, ?)");
-      
-      //Bind Values
-      $stmt->bind_param("sss", $username, $password, $email);
-      
-      // Check for any unwanted exception and redirect to errorPage
-      try {
-        $stmt->execute();
-      } catch (mysqli_sql_exception $e) {
-        header("Location: errorPage.php");
-        die("Connection failed: " . $e->getMessage());
-      }
 
-      header("Location: login.php");
+      $_SESSION['tempUsername'] = $username;
+      $_SESSION['tempEmail'] = $email;
+      $_SESSION['tempPassword'] = $password;
+
+      header("Location: devKey.php");
     }
   }
 
@@ -46,7 +38,7 @@
     <div id="SignupBox">
       <div id="CompanyLogo">
         <img src="../Component/Style/topBar/Resource/Logo.png" hidden>
-        <p>SignUp</p>
+        <p id="FormHead">SignUp</p>
       </div>
       <div>
         <form action="" method="post">

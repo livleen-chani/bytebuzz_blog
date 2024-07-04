@@ -1,3 +1,12 @@
+:root {
+    /* IE and Edge */
+    -ms-overflow-style: none; 
+
+    /* Firefox */
+    scrollbar-width: none;  
+  
+}
+
 html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
