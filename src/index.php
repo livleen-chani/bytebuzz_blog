@@ -1,9 +1,3 @@
 <?php
-include "connectdb.php";
-
-if ($connectionSuccess) {
-  session_start();
-  include "core.php";
-  // session_destroy();
-}
+  header("Location: Page/feed.php");
 ?>

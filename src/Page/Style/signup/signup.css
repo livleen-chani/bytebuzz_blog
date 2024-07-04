@@ -1,0 +1,94 @@
+#SignupWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  background-color: aqua;
+}
+
+  #SignupWrapper #SignupBox {
+    height: 600px;
+    width: 400px;
+  
+    border-radius: 10px;
+  
+    background-color: black;
+  }
+
+    #SignupWrapper #SignupBox #CompanyLogo {    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
+
+      #SignupWrapper #SignupBox #CompanyLogo p {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+    #SignupWrapper #SignupBox #SignupForm {
+      margin: 20px;
+      padding: 0px;
+    }
+
+      #SignupWrapper #SignupBox #SignupForm li {
+        list-style: none;
+
+        cursor: default;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+        #SignupWrapper #SignupBox #SignupForm li p {
+          width: 100%;
+          text-align: left;
+  
+          padding-left: 25px;
+
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+
+      #SignupWrapper #SignupBox #SignupForm input {
+        width: 80%;
+        height: 20px;
+
+        border-radius: 10px;
+
+        padding: 10px;
+        margin-bottom: 20px;
+
+        font-size: 16px;
+      }
+
+      #SignupWrapper #SignupBox #SignupForm #SubmitButton {
+        margin-top: 20px;
+
+        margin-left: 25px;
+        margin-right: 25px;
+
+        height: 50px;
+        width: 100%;
+
+        cursor: pointer;
+      }
+    
+    #SignupWrapper #SignupBox #LinkToSignUp {
+      margin-top: 20px;
+      
+      cursor: default;
+
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+
+      #SignupWrapper #SignupBox #LinkToSignUp b {
+        cursor: pointer;
+      }
+  

@@ -1,0 +1,89 @@
+#LoginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  background-color: aqua;
+}
+
+  #LoginWrapper #LoginBox {
+    height: 600px;
+    width: 400px;
+  
+    border-radius: 10px;
+  
+    background-color: black;
+  }
+
+    #LoginWrapper #LoginBox #CompanyLogo {    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+
+    #LoginWrapper #LoginBox #LoginForm {
+      margin: 20px;
+      padding: 0px;
+    }
+
+      #LoginWrapper #LoginBox #LoginForm li {
+        list-style: none;
+
+        cursor: default;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+        #LoginWrapper #LoginBox #LoginForm li p {
+          width: 100%;
+          text-align: left;
+  
+          padding-left: 25px;
+
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+
+      #LoginWrapper #LoginBox #LoginForm input {
+        width: 80%;
+        height: 20px;
+
+        border-radius: 10px;
+
+        padding: 10px;
+        margin-bottom: 20px;
+
+        font-size: 16px;
+      }
+
+      #LoginWrapper #LoginBox #LoginForm #SubmitButton {
+        margin-top: 20px;
+
+        margin-left: 25px;
+        margin-right: 25px;
+
+        height: 50px;
+        width: 100%;
+
+        cursor: pointer;
+      }
+    
+    #LoginWrapper #LoginBox #LinkToSignUp {
+      margin-top: 40px;
+      
+      cursor: default;
+
+      margin-left: 45px;
+      margin-right: 45px;
+    }
+
+      #LoginWrapper #LoginBox #LinkToSignUp b {
+        cursor: pointer;
+      }
+  

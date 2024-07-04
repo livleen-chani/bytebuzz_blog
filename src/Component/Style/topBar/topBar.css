@@ -1,24 +1,26 @@
 html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+
+  height: 100%;
+  margin: 0;
+
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(157, 157, 157);
 }
 
 #MainWrapper {
-  height: 100%;
-  overflow: hidden;
-
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /* Main Wrapper Content */
 
-#MainWrapper #MainTopBar {
+#MainWrapper #TopBar {
   height: 80px;
   background-color: rgb(50, 211, 45);
 
@@ -29,31 +31,28 @@ html, body {
   border-bottom: solid purple 2px;
 }
 
-  #MainWrapper #MainTopBar #MainTopWebsiteName {
+  #MainWrapper #TopBar #WebsiteName {
     display: flex;
     margin: 20px;
   }
 
-    #MainWrapper #MainTopBar #MainTopWebsiteName img {
+    #MainWrapper #TopBar #WebsiteName img {
       height: 40px;
       padding-right: 20px;
     }
   
-  #MainWrapper #MainTopBar #MainTopAccountControl {
+  #MainWrapper #TopBar #AccountControl {
     margin: 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
   }
-    #MainWrapper #MainTopBar #MainTopAccountControl a {
+    #MainWrapper #TopBar #AccountControl img {
       height: 40px;
     }
-      #MainWrapper #MainTopBar #MainTopAccountControl a img {
-        height: 40px;
-      }
     
-    #MainWrapper #MainTopBar #MainTopAccountControl #MainTopAccountProfile {
+    #MainWrapper #TopBar #AccountControl #AccountProfile {
       height: 40px;
       width: 40px;
 
@@ -62,7 +61,7 @@ html, body {
 
       background-color: bisque;
 
-      background-image: url("Resources/Logo.png");
+      background-image: url("Resource/Logo.png");
       background-position: center;
     }
 
