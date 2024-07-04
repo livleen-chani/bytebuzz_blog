@@ -7,7 +7,8 @@
   $dbName = getenv('MYSQL_DATABASE');
 
   $devKey = getenv('SIGNUP_KEY');
-  echo $devKey;
+  
+  print_r($_ENV);
 
   mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
   
