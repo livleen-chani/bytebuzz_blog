@@ -12,6 +12,7 @@
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     session_start();
+    // session_destroy();
   } catch (mysqli_sql_exception $e) {
     header("Location: errorPage.php");
     die("Connection failed: " . $e->getMessage());
