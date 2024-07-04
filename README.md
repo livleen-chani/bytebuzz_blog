@@ -1,2 +1,2 @@
-# bytebuzz_blog
+# bytebuzz
 Blog
