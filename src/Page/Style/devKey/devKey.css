@@ -1,0 +1,89 @@
+#MainContainer {
+  height: 100vh;
+  width: 100%;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  background-color: aqua;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainContainer #DevKey {
+  height: 480px;
+  width: 350px;
+
+  position: relative;
+  top: -30px;
+
+  background-color: black;
+
+  border-radius: 10px;
+}
+
+  #MainContainer #DevLogo {
+    margin-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #MainContainer #DevLogo img {
+    height: 150px;
+  }
+
+  #MainContainer #DevText {
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  #MainContainer #DevText p {
+    font-weight: bold;
+
+    margin: 0px;
+  }
+
+  #MainContainer #KeyInput {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #MainContainer #KeyInput input {
+    width: 80%;
+    
+    font-size: 14px;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+  }
+
+  #MainContainer #SubmitButton {
+    width: 100%;
+
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #MainContainer #SubmitButton input {
+    height: 40px;
+    width: 40%;
+
+    border-radius: 10px;
+  }

@@ -28,6 +28,9 @@
       #SignupWrapper #SignupBox #CompanyLogo p {
         font-size: 30px;
         font-weight: bold;
+
+        margin-top: 40px;
+        margin-bottom: 10px;
       }
 
     #SignupWrapper #SignupBox #SignupForm {
@@ -65,6 +68,10 @@
         margin-bottom: 20px;
 
         font-size: 16px;
+      }
+
+      #SignupWrapper #SignupBox #SignupForm #Devkey {
+        display: flex;
       }
 
       #SignupWrapper #SignupBox #SignupForm #SubmitButton {

@@ -1,16 +1,18 @@
 <?php
   ob_start();
   
-  $servername = "db";
-  $username = getenv('MYSQL_USER');
-  $password = getenv('MYSQL_PASSWORD');
-  $dbname = getenv('MYSQL_DATABASE');
+  $dbServerName = "db";
+  $dbUsername = getenv('MYSQL_USER');
+  $dbPassword = getenv('MYSQL_PASSWORD');
+  $dbName = getenv('MYSQL_DATABASE');
+
+  $devKey = getenv('SIGNUP_KEY');
   
   mysqli_report(MYSQLI_REPORT_STRICT | MYSQLI_REPORT_ALL);
   
   try {
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($dbServerName, $dbUsername, $dbPassword, $dbName);
     session_start();
     // session_destroy();
   } catch (mysqli_sql_exception $e) {
