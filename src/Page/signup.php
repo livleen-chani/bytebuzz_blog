@@ -24,9 +24,6 @@
       header("Location: devKey.php");
     }
   }
-
-  
-
   ob_end_flush();
 ?>
 
