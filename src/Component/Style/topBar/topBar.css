@@ -31,7 +31,7 @@ html, body {
 /* Main Wrapper Content */
 
 #MainWrapper #TopBar {
-  height: 80px;
+  height: 60px;
   background-color: rgb(50, 211, 45);
 
   display: flex;
